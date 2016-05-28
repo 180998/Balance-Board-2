@@ -122,7 +122,5 @@ while Session:
 
 
 
-
-
 #Key information, on the phone go to the settings and deselect all options except DM
 #Then change your recording rate to 1 s
