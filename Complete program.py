@@ -7,7 +7,7 @@ import socket
 
 
 text_file = open("TextFile.txt", "a")
-Again=True
+Restart=True
 Session=True
 
 while Session:
@@ -16,7 +16,7 @@ while Session:
     response= raw_input("Hello " + name + ", are you ready?")
 
     if response== "yes" or response == "y" or response == "ye":
-        while Again:
+        while Restart:
             print ("ready")
             time.sleep(1)
             print (float(3))
