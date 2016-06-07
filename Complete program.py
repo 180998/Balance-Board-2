@@ -4,6 +4,7 @@
 import time
 import sys, select
 import socket
+import datetime
 
 
 text_file = open("TextFile.txt", "a")
@@ -78,6 +79,7 @@ while Session:
                     text_file.write("Student Name: " + name + "\n")
                     text_file.write("Student ID: " + student_ID + "\n")
                     text_file.write("Time: " + str(Sec) + " Second(s)" + "\n")
+                    text_file.write("Date:"+ time.strftime("%Y-%m-%d %H:%M"))
                     text_file.close()
 
                     restart = raw_input('Try again? yes or no')
@@ -101,6 +103,7 @@ while Session:
                     text_file.write("Student Name: " + name + "\n")
                     text_file.write("Student ID: " + student_ID + "\n")
                     text_file.write("Time: " + str(round(end-start,3)) + " Second(s)" + "\n")
+                    text_file.write("Date:"+ time.strftime("%Y-%m-%d %H:%M"))
                     text_file.close()
 
                     restart = raw_input('Try again? yes or no')
